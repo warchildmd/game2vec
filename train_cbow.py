@@ -213,7 +213,7 @@ def plot(embeddings, labels):
         pylab.scatter(x, y)
         pylab.annotate(label, xy=(x, y), xytext=(5, 2), textcoords='offset points',
                        ha='right', va='bottom')
-    pylab.savefig('tsne_cbow.png', bbox_inches='tight')
+    pylab.savefig('visuals/tsne_cbow.png', bbox_inches='tight')
 
 
 words = [idx_to_game[i] for i in range(1, num_points + 1)]
@@ -226,5 +226,5 @@ pickle_data = {
     'game_to_idx': game_to_idx
 }
 
-np.save('embeddings_cbow.npy', pickle_data)
+np.save('saves/embeddings_cbow.npy', pickle_data)
 print('Data saved to embeddings_cbow.npy')

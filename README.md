@@ -16,9 +16,9 @@ For more reference, please have a look at this papers:
  
 There are three training scripts:
 
- * **cbow.py** - training using CBOW, using both purchase and play actions into account as user context.
- * **cbow_weighted.py** - same as above, but, only play actions are taken into consideration, and the label is selected based on time played (more time played the game - higher the probability of being selected).
- * **skipgram.py** - training using Skip-gram, using both purchase and play actions into account as user context.
+ * **train_cbow.py** - training using CBOW, using both purchase and play actions into account as user context.
+ * **train_cbow_weighted.py** - same as above, but, only play actions are taken into consideration, and the label is selected based on time played (more time played the game - higher the probability of being selected).
+ * **train_skipgram.py** - training using Skip-gram, using both purchase and play actions into account as user context.
  
 Each script outputs an image with the game embeddings visualised using t-SNE, and a .npy file containing embeddings, dictionary, and reverse dictionary:
 ```
