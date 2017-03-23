@@ -1,4 +1,4 @@
-#game2vec - games embeddings 
+# game2vec - games embeddings 
 
 TensorFlow implementation of word2vec applied on https://www.kaggle.com/tamber/steam-video-games dataset, using both CBOW and Skip-gram.
 
