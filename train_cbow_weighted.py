@@ -58,7 +58,7 @@ def random_multinomial_choice(tuples):
     total = sum([hours for _, hours in tuples])
     for game, hours in tuples:
         y = hours / total
-        if y <= x:
+        if y >= x:
             return game
         x -= y
     return tuples[-1][0]
